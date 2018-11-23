@@ -21,3 +21,12 @@ def increase_pets_sold(petshop, amount)
   new_pets_sold = initial_pets_sold_value + amount
   petshop[:admin][:pets_sold] = new_pets_sold
 end
+
+def stock_count(petshop)
+  total_pets = []
+  p total_pets
+  for pet in petshop
+    total_pets = petshop[:pets]
+  end
+  total_pets.length
+end
