@@ -22,11 +22,21 @@ def increase_pets_sold(petshop, amount)
   petshop[:admin][:pets_sold] = new_pets_sold
 end
 
-def stock_count(petshop)
-  total_pets = []
-  p total_pets
+def stock_count(petshop)   #AT FIRST : forgot to put container, then forgot count after
+  total_pets = []         #same mistake - forgetting to make container!
   for pet in petshop
     total_pets = petshop[:pets]
   end
-  total_pets.length
+  total_pets.count
+end
+
+
+def pets_by_breed(petshop, breed)
+  unique_breeds = []
+  for pet in petshop[:pets]
+    if pet[:breed] == breed
+      unique_breeds.push(pet)
+    end
+  end
+  return unique_breeds
 end
