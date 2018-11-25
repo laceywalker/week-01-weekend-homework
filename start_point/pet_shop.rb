@@ -40,3 +40,11 @@ def pets_by_breed(petshop, breed)
   end
   return unique_breeds
 end
+
+def find_pet_by_name(petshop, name)
+  for pet in petshop[:pets]
+   if pet[:name] == name
+     return pet
+   end
+  end
+end
