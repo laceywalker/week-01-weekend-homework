@@ -47,4 +47,5 @@ def find_pet_by_name(petshop, name)
      return pet
    end
   end
+  else return nil
 end
