@@ -58,3 +58,11 @@ def remove_pet_by_name(petshop, name)
   end
   else return nil
 end
+
+def add_pet_to_stock(petshop, newpet)
+    total_pets = []
+    for pet in petshop
+      total_pets = petshop[:pets]
+    end
+    total_pets.push(newpet)
+end
